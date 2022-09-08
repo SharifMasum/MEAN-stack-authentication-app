@@ -1,0 +1,7 @@
+POST http://localhost:3000/users/authenticate
+Content-Type: application/json
+
+{
+    "username": "Sharif",
+    "password": "12345"
+}
