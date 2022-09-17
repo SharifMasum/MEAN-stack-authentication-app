@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<div class="container">
+  <div class="navbar-header">
+      <a class="navbar-brand" href="#">MEAN Authetication App</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+    
+    <div class="collapse navbar-collapse" id="navbarDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+          <a class="nav-link" [routerLink]="['/']">Home <span></span></a>
+        </li>
+      </ul>
+
+      
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+            <a class="nav-link" [routerLink]="['/login']">Login</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}">
+            <a class="nav-link" [routerLink]="['/register']">Register</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
