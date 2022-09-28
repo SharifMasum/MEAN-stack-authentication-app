@@ -20,5 +20,12 @@
   },
   "author": "Md Shariful Islam",
   "license": "ISC",
-  "devDependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharifMasum/MEAN-stack-authentication-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SharifMasum/MEAN-stack-authentication-app/issues"
+  },
+  "homepage": "https://github.com/SharifMasum/MEAN-stack-authentication-app#readme"
 }
