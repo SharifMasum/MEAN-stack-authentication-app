@@ -15,6 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ValidateService } from './services/validate.service';
 import { AuthService } from './services/auth.service';
 import { FlashMessagesModule } from 'flash-messages-angular';
+import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,10 @@ import { FlashMessagesModule } from 'flash-messages-angular';
     FlashMessagesModule.forRoot(),
     HttpClientModule
   ],
-  providers: [ValidateService, AuthService],
+  providers: [ValidateService, AuthService, AuthGuard, [
+    { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
+    JwtHelperService
+]],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
+//import { JwtHelperService } from '@auth0/angular-jwt';
 
 @Component({
   selector: 'app-profile',
@@ -13,6 +14,7 @@ export class ProfileComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router
+    //public jwtHelper: JwtHelperService
   ) { }
 
   ngOnInit() {
@@ -23,6 +25,7 @@ export class ProfileComponent implements OnInit {
       return false;
     }
     });
+    //console.log(this.jwtHelper.isTokenExpired());
   }
 
 }
